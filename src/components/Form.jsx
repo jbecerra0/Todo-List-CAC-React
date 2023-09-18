@@ -18,22 +18,22 @@ const Form = ({ addTask }) => {
     };
 
     return (
-        <form className="d-flex flex-row align-items-center mb-4 gap-3" onSubmit={handleSubmit}>
-            <div>
-                <input
-                    type="text"
-                    name="title"
-                    className="form-control"
-                    placeholder="Enter a title for the task"
-                    value={form.title}
-                    onChange={handleChange}
-                />
-            </div>
-            <div>
-                <button type="submit" className="btn btn-primary">
-                    <span className="material-symbols-outlined">add_task</span>
-                </button>
-            </div>
+        <form
+            className="d-flex flex-row align-items-center gap-3"
+            onSubmit={handleSubmit}
+        >
+            <input
+                type="text"
+                name="title"
+                className="form-control"
+                placeholder="Enter a title for the task"
+                value={form.title}
+                onChange={handleChange}
+            />
+
+            <button type="submit" className="btn btn-primary">
+                <span className="material-symbols-outlined">add_task</span>
+            </button>
         </form>
     );
 };

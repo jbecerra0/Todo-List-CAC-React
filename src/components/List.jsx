@@ -1,7 +1,7 @@
 const List = ({ tasks, deleteTask, changeCompleted }) => {
     return (
         tasks.length > 0 && (
-            <table className="table table-dark">
+            <table className="table table-dark table-borderless mt-4">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
